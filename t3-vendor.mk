@@ -126,6 +126,7 @@ PRODUCT_COPY_FILES += \
     vendor/lumigon/t3/proprietary/lib/hw/lights.mt6795.so:system/lib/hw/lights.mt6795.so \
     vendor/lumigon/t3/proprietary/lib/hw/memtrack.mt6795.so:system/lib/hw/memtrack.mt6795.so \
     vendor/lumigon/t3/proprietary/lib/hw/mmsdk.mt6795.so:system/lib/hw/mmsdk.mt6795.so \
+    vendor/lumigon/t3/proprietary/lib/hw/nfc_nci.mt6605.default.so:system/lib/hw/nfc_nci.mt6605.default.so \
     vendor/lumigon/t3/proprietary/lib/hw/sensors.mt6795.so:system/lib/hw/sensors.mt6795.so \
     vendor/lumigon/t3/proprietary/lib/lib3a.so:system/lib/lib3a.so \
     vendor/lumigon/t3/proprietary/lib/lib3a_sample.so:system/lib/lib3a_sample.so \
@@ -213,10 +214,12 @@ PRODUCT_COPY_FILES += \
     vendor/lumigon/t3/proprietary/lib/libdpframework.so:system/lib/libdpframework.so \
     vendor/lumigon/t3/proprietary/lib/libdrmmtkutil.so:system/lib/libdrmmtkutil.so \
     vendor/lumigon/t3/proprietary/lib/libdrmmtkwhitelist.so:system/lib/libdrmmtkwhitelist.so \
+    vendor/lumigon/t3/proprietary/lib/libdta_mt6605_jni.so:system/lib/libdta_mt6605_jni.so \
     vendor/lumigon/t3/proprietary/lib/libem_bt_jni.so:system/lib/libem_bt_jni.so \
     vendor/lumigon/t3/proprietary/lib/libem_gpio_jni.so:system/lib/libem_gpio_jni.so \
     vendor/lumigon/t3/proprietary/lib/libem_lte_jni.so:system/lib/libem_lte_jni.so \
     vendor/lumigon/t3/proprietary/lib/libem_modem_jni.so:system/lib/libem_modem_jni.so \
+    vendor/lumigon/t3/proprietary/lib/libem_nfc_jni.so:system/lib/libem_nfc_jni.so \
     vendor/lumigon/t3/proprietary/lib/libem_sensor_jni.so:system/lib/libem_sensor_jni.so \
     vendor/lumigon/t3/proprietary/lib/libem_support_jni.so:system/lib/libem_support_jni.so \
     vendor/lumigon/t3/proprietary/lib/libem_usb_jni.so:system/lib/libem_usb_jni.so \
@@ -271,6 +274,7 @@ PRODUCT_COPY_FILES += \
     vendor/lumigon/t3/proprietary/lib/libmtkcamera_client.so:system/lib/libmtkcamera_client.so \
     vendor/lumigon/t3/proprietary/lib/libmtkjpeg.so:system/lib/libmtkjpeg.so \
     vendor/lumigon/t3/proprietary/lib/libmtklimiter.so:system/lib/libmtklimiter.so \
+    vendor/lumigon/t3/proprietary/lib/libmtknfc.so:system/lib/libmtknfc.so \
     vendor/lumigon/t3/proprietary/lib/libmtknfc_dynamic_load_jni.so:system/lib/libmtknfc_dynamic_load_jni.so \
     vendor/lumigon/t3/proprietary/lib/libmtkplayer.so:system/lib/libmtkplayer.so \
     vendor/lumigon/t3/proprietary/lib/libmtkshifter.so:system/lib/libmtkshifter.so \
@@ -278,6 +282,8 @@ PRODUCT_COPY_FILES += \
     vendor/lumigon/t3/proprietary/lib/libmtksqlite3_custom.so:system/lib/libmtksqlite3_custom.so \
     vendor/lumigon/t3/proprietary/lib/libn3d3a.so:system/lib/libn3d3a.so \
     vendor/lumigon/t3/proprietary/lib/libnativecheck-jni.so:system/lib/libnativecheck-jni.so \
+    vendor/lumigon/t3/proprietary/lib/libnfc_mt6605_jni.so:system/lib/libnfc_mt6605_jni.so \
+    vendor/lumigon/t3/proprietary/lib/libnfc_ndef.so:system/lib/libnfc_ndef.so \
     vendor/lumigon/t3/proprietary/lib/libnvram.so:system/lib/libnvram.so \
     vendor/lumigon/t3/proprietary/lib/libnvram_daemon_callback.so:system/lib/libnvram_daemon_callback.so \
     vendor/lumigon/t3/proprietary/lib/libnvram_platform.so:system/lib/libnvram_platform.so \
@@ -330,6 +336,7 @@ PRODUCT_COPY_FILES += \
     vendor/lumigon/t3/proprietary/lib64/hw/lights.mt6795.so:system/lib64/hw/lights.mt6795.so \
     vendor/lumigon/t3/proprietary/lib64/hw/memtrack.mt6795.so:system/lib64/hw/memtrack.mt6795.so \
     vendor/lumigon/t3/proprietary/lib64/hw/mmsdk.mt6795.so:system/lib64/hw/mmsdk.mt6795.so \
+    vendor/lumigon/t3/proprietary/lib64/hw/nfc_nci.mt6605.default.so:system/lib64/hw/nfc_nci.mt6605.default.so \
     vendor/lumigon/t3/proprietary/lib64/hw/sensors.mt6795.so:system/lib64/hw/sensors.mt6795.so \
     vendor/lumigon/t3/proprietary/lib64/lib3a.so:system/lib64/lib3a.so \
     vendor/lumigon/t3/proprietary/lib64/lib3a_sample.so:system/lib64/lib3a_sample.so \
@@ -392,6 +399,8 @@ PRODUCT_COPY_FILES += \
     vendor/lumigon/t3/proprietary/lib64/libdpframework.so:system/lib64/libdpframework.so \
     vendor/lumigon/t3/proprietary/lib64/libdrmmtkutil.so:system/lib64/libdrmmtkutil.so \
     vendor/lumigon/t3/proprietary/lib64/libdrmmtkwhitelist.so:system/lib64/libdrmmtkwhitelist.so \
+    vendor/lumigon/t3/proprietary/lib64/libdta_dynamic_load_jni.so:system/lib64/libdta_dynamic_load_jni.so \
+    vendor/lumigon/t3/proprietary/lib64/libdta_mt6605_jni.so:system/lib64/libdta_mt6605_jni.so \
     vendor/lumigon/t3/proprietary/lib64/libem_bt_jni.so:system/lib64/libem_bt_jni.so \
     vendor/lumigon/t3/proprietary/lib64/libem_gpio_jni.so:system/lib64/libem_gpio_jni.so \
     vendor/lumigon/t3/proprietary/lib64/libem_lte_jni.so:system/lib64/libem_lte_jni.so \
@@ -447,6 +456,7 @@ PRODUCT_COPY_FILES += \
     vendor/lumigon/t3/proprietary/lib64/libmtkcamera_client.so:system/lib64/libmtkcamera_client.so \
     vendor/lumigon/t3/proprietary/lib64/libmtkjpeg.so:system/lib64/libmtkjpeg.so \
     vendor/lumigon/t3/proprietary/lib64/libmtklimiter.so:system/lib64/libmtklimiter.so \
+    vendor/lumigon/t3/proprietary/lib64/libmtknfc.so:system/lib64/libmtknfc.so \
     vendor/lumigon/t3/proprietary/lib64/libmtknfc_dynamic_load_jni.so:system/lib64/libmtknfc_dynamic_load_jni.so \
     vendor/lumigon/t3/proprietary/lib64/libmtkplayer.so:system/lib64/libmtkplayer.so \
     vendor/lumigon/t3/proprietary/lib64/libmtkshifter.so:system/lib64/libmtkshifter.so \
@@ -454,6 +464,8 @@ PRODUCT_COPY_FILES += \
     vendor/lumigon/t3/proprietary/lib64/libmtksqlite3_custom.so:system/lib64/libmtksqlite3_custom.so \
     vendor/lumigon/t3/proprietary/lib64/libn3d3a.so:system/lib64/libn3d3a.so \
     vendor/lumigon/t3/proprietary/lib64/libnativecheck-jni.so:system/lib64/libnativecheck-jni.so \
+    vendor/lumigon/t3/proprietary/lib64/libnfc_mt6605_jni.so:system/lib64/libnfc_mt6605_jni.so \
+    vendor/lumigon/t3/proprietary/lib64/libnfc_ndef.so:system/lib64/libnfc_ndef.so \
     vendor/lumigon/t3/proprietary/lib64/libnvram.so:system/lib64/libnvram.so \
     vendor/lumigon/t3/proprietary/lib64/libnvram_daemon_callback.so:system/lib64/libnvram_daemon_callback.so \
     vendor/lumigon/t3/proprietary/lib64/libnvram_platform.so:system/lib64/libnvram_platform.so \
@@ -525,4 +537,5 @@ PRODUCT_COPY_FILES += \
     vendor/lumigon/t3/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib64/mediadrm/libdrmclearkeyplugin.so \
     vendor/lumigon/t3/proprietary/vendor/lib64/mediadrm/libmockdrmcryptoplugin.so:system/vendor/lib64/mediadrm/libmockdrmcryptoplugin.so \
     vendor/lumigon/t3/proprietary/xbin/BGW:system/xbin/BGW \
-    vendor/lumigon/t3/proprietary/xbin/mnld:system/xbin/mnld
+    vendor/lumigon/t3/proprietary/xbin/mnld:system/xbin/mnld \
+    vendor/lumigon/t3/proprietary/xbin/nfcstackp:system/xbin/nfcstackp
