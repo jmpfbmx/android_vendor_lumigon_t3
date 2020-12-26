@@ -405,6 +405,7 @@ PRODUCT_COPY_FILES += \
     vendor/lumigon/t3/proprietary/lib64/libem_gpio_jni.so:system/lib64/libem_gpio_jni.so \
     vendor/lumigon/t3/proprietary/lib64/libem_lte_jni.so:system/lib64/libem_lte_jni.so \
     vendor/lumigon/t3/proprietary/lib64/libem_modem_jni.so:system/lib64/libem_modem_jni.so \
+    vendor/lumigon/t3/proprietary/lib64/libem_nfc_jni.so:system/lib64/libem_nfc_jni.so \
     vendor/lumigon/t3/proprietary/lib64/libem_sensor_jni.so:system/lib64/libem_sensor_jni.so \
     vendor/lumigon/t3/proprietary/lib64/libem_support_jni.so:system/lib64/libem_support_jni.so \
     vendor/lumigon/t3/proprietary/lib64/libem_usb_jni.so:system/lib64/libem_usb_jni.so \
